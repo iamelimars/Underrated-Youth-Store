@@ -1,0 +1,13 @@
+<h1 class="page-title">The Underatted Youth</h1>
+
+<h3 class="page-secondary-title">Categories</h3>
+
+<!-- <ul>
+  <li ng-repeat="cat in categories"><a ng-href="#/category/{{ cat.id }}">{{ cat.title }}</a></li>
+</ul> -->
+
+<div class="container">
+  <div class="category-cell" ng-repeat="cat in categories">
+    <a ng-href="#/category/{{ cat.id }}"><h5 class="col-md-12">{{ cat.title }}</h5></a>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+
+<h1 class="page-title">The Underatted Youth</h1>
+
+<h3 class="page-secondary-title">{{ cat.title }}</h3>
+
+<div class="container">
+  <div ng-repeat="prod in products" class="col-sm-4 product-cell">
+    <a ng-href="#/product/{{ prod.id }}">
+      <div class="col-xs-10 col-xs-offset-1">
+        <h5>{{ prod.title }}</h5>
+        <h6>{{ prod.price.data.formatted.without_tax }}</h6>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- <ul>
+    <li ng-repeat="prod in products"><a ng-href="#/product/{{ prod.id }}">{{ prod.title }}</a></li>
+  </ul> -->
+</div>

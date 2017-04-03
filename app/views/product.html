@@ -1,0 +1,21 @@
+<h1 class="page-title">The Underatted Youth</h1>
+
+<div class="container">
+  <div class="col-sm-8 image-section">
+    <img ng-src="{{ prod.images[0].url.https }}" alt="">
+  </div>
+
+  <div class="col-sm-4 prod-info-section">
+    <h4 class="page-secondary-title">{{ prod.title }}</h4>
+    <h5>{{ prod.description }}</h5>
+    <h6>{{ prod.price.value }}</h6>
+
+    <button ng-if="!addStatus" ng-click="addCart()" class="btn btn-success">Add To Cart</button>
+    <button ng-if="addStatus" class="btn btn-warning">{{addStatus}}</button>
+  </div>
+</div>
+
+
+
+
+<!-- <img src="{{ prod.images[0].url.https }}" alt=""> -->
